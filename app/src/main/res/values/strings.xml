@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">TTC Next</string>
+    <string name="action_settings">Feedback</string>
+    <string name="save">SAVE</string>
+    <string name="Subway_map">subway map</string>
+    <string name="Save_routes">saved routes</string>
+    <string-array name="list_of_route">
+        <item>5-Avenue Rd</item>
+        <item>6-Bay</item>
+        <item>7-Bathurst</item>
+        <item>8-Broadview</item>
+        <item>9-Bellamy</item>
+        <item>10-Van Horne</item>
+        <item>11-Bayview</item>
+        <item>12-Kingston Rd</item>
+        <item>14-Glencairn</item>
+        <item>15-Evans</item>
+        <item>16-McCowan</item>
+        <item>17-Birchmount</item>
+        <item>20-Cliffside</item>
+        <item>21-Brimley</item>
+        <item>22-Coxwell</item>
+        <item>23-Dawes</item>
+        <item>24-Victoria Park</item>
+        <item>25-Don Mills</item>
+        <item>26-Dupont</item>
+        <item>28-Davisville</item>
+        <item>29-Dufferin</item>
+        <item>30-Lambton</item>
+        <item>31-Greenwood</item>
+        <item>32-Eglinton West</item>
+        <item>33-Forest Hill</item>
+        <item>34-Eglinton East</item>
+        <item>35-Jane</item>
+        <item>36-Finch West</item>
+        <item>37-Islington</item>
+        <item>38-Highland Creek</item>
+        <item>39-Finch East</item>
+        <item>40-Junction</item>
+        <item>41-Keele</item>
+        <item>42-Cummer</item>
+        <item>43-Kennedy</item>
+        <item>44-Kipling South</item>
+        <item>45-Kipling</item>
+        <item>46-Martin Grove</item>
+        <item>47-Lansdowne</item>
+        <item>48-Rathburn</item>
+        <item>49-Bloor West</item>
+        <item>50-Burnhamthorpe</item>
+        <item>51-Leslie</item>
+        <item>52-Lawrence West</item>
+        <item>53-Steeles East</item>
+        <item>54-Lawrence East</item>
+        <item>55-Warren Park</item>
+        <item>56-Leaside</item>
+        <item>57-Midland</item>
+        <item>59-Maple Leaf</item>
+        <item>60-Steeles West</item>
+        <item>61-Avenue Rd North</item>
+        <item>62-Mortimer</item>
+        <item>63-Ossington</item>
+        <item>64-Main</item>
+        <item>65-Parliament</item>
+        <item>66-Prince Edward</item>
+        <item>67-Pharmacy</item>
+        <item>68-Warden</item>
+        <item>69-Warden South</item>
+        <item>70-O\'Connor</item>
+        <item>71-Runnymede</item>
+        <item>72-Pape</item>
+        <item>73-Royal York</item>
+        <item>74-Mt Pleasant</item>
+        <item>75-Sherbourne</item>
+        <item>76-Royal York South</item>
+        <item>77-Swansea</item>
+        <item>78-St Andrews</item>
+        <item>79-Scarlett Rd</item>
+        <item>80-Queensway</item>
+        <item>81-Thorncliffe Park</item>
+        <item>82-Rosedale</item>
+        <item>83-Jones</item>
+        <item>84-Sheppard West</item>
+        <item>85-Sheppard East</item>
+        <item>86-Scarborough</item>
+        <item>87-Cosburn</item>
+        <item>88-South Leaside</item>
+        <item>89-Weston</item>
+        <item>90-Vaughan</item>
+        <item>91-Woodbine</item>
+        <item>92-Woodbine South</item>
+        <item>94-Wellesley</item>
+        <item>95-York Mills</item>
+        <item>96-Wilson</item>
+        <item>97-Yonge</item>
+        <item>98-Willowdale - Senlac</item>
+        <item>99-Arrow Road</item>
+        <item>100-Flemingdon Park</item>
+        <item>101-Downsview Park</item>
+        <item>102-Markham Rd</item>
+        <item>103-Mt Pleasant North</item>
+        <item>104-Faywood</item>
+        <item>105-Dufferin North</item>
+        <item>106-York University</item>
+        <item>107-Keele North</item>
+        <item>108-Downsview</item>
+        <item>109-Ranee</item>
+        <item>110-Islington South</item>
+        <item>111-East Mall</item>
+        <item>112-West Mall</item>
+        <item>113-Danforth</item>
+        <item>115-Silver Hills</item>
+        <item>116-Morningside</item>
+        <item>117-Alness</item>
+        <item>120-Calvington</item>
+        <item>122-Graydon Hall</item>
+        <item>123-Shorncliffe</item>
+        <item>124-Sunnybrook</item>
+        <item>125-Drewry</item>
+        <item>126-Christie</item>
+        <item>127-Davenport</item>
+        <item>129-McCowan North</item>
+        <item>130-Middlefield</item>
+        <item>131-Nugget</item>
+        <item>132-Milner</item>
+        <item>133-Neilson</item>
+        <item>134-Progress</item>
+        <item>135-Gerrard</item>
+        <item>139-Finch-Don Mills</item>
+        <item>141-Downtown/Mt Pleasant Express</item>
+        <item>142-Downtown/Avenue Rd Express</item>
+        <item>143-Downtown/Beach Express</item>
+        <item>144-Downtown/Don Valley Express</item>
+        <item>145-Downtown/Humber Bay Express</item>
+        <item>160-Bathurst North</item>
+        <item>161-Rogers Rd</item>
+        <item>162-Lawrence - Donway</item>
+        <item>165-Weston Rd North</item>
+        <item>167-Pharmacy North</item>
+        <item>168-Symington</item>
+        <item>169-Huntingwood</item>
+        <item>171-Mount Dennis</item>
+        <item>172-Cherry Street</item>
+        <item>190-Scarborough Centre Rocket</item>
+        <item>191-Highway 27 Rocket</item>
+        <item>192-Airport Rocket</item>
+        <item>195-Jane Rocket</item>
+        <item>196-York University Rocket</item>
+        <item>198-U Of T Scarborough Rocket</item>
+        <item>199-Finch Rocket</item>
+        <item>224-Victoria Park North</item>
+        <item>300-Bloor - Danforth</item>
+        <item>301-Queen</item>
+        <item>302-Danforth Rd - McCowan</item>
+        <item>304-King</item>
+        <item>306-Carlton</item>
+        <item>310-Bathurst</item>
+        <item>312-St Clair-Junction Night Bus</item>
+        <item>315-Evans - Brown\'S Line</item>
+        <item>317-Spadina N.C.</item>
+        <item>320-Yonge</item>
+        <item>322-Coxwell</item>
+        <item>324-Victoria Park</item>
+        <item>325-Don Mills</item>
+        <item>329-Dufferin</item>
+        <item>332-Eglinton West</item>
+        <item>334-Eglinton East</item>
+        <item>335-Jane</item>
+        <item>336-Finch West</item>
+        <item>337-Islington</item>
+        <item>339-Finch East</item>
+        <item>341-Keele</item>
+        <item>343-Kennedy</item>
+        <item>352-Lawrence West</item>
+        <item>353-Steeles</item>
+        <item>354-Lawrence East</item>
+        <item>363-Ossington</item>
+        <item>365-Parliament</item>
+        <item>384-Sheppard West</item>
+        <item>385-Sheppard East</item>
+        <item>395-York Mills</item>
+        <item>396-Wilson</item>
+        <item>501-Queen</item>
+        <item>502-Downtowner</item>
+        <item>503-Kingston Rd</item>
+        <item>504-King</item>
+        <item>505-Dundas</item>
+        <item>506-Carlton</item>
+        <item>509-Harbourfront</item>
+        <item>510-Spadina</item>
+        <item>511-Bathurst</item>
+        <item>512-St Clair</item>
+    </string-array>
+    <string name="title_activity_vehicle_stops">List of stops</string>
+    <string name="title_activity_main2">Next vehicle</string>
+    <string name="title_activity_subway_map">Subway map</string>
+    <string name="title_activity_save_route">Saved route</string>
+
+</resources>
