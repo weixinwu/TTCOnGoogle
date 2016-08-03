@@ -5,10 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.weixin.ttc.Subway_map">
+    tools:context="com.weixin.ttc.Subway_map">
 
 
-    <include layout="@layout/content_subway_map" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/subway_map_image_view"
+        android:src="@drawable/subway_map"/>
 
 
 

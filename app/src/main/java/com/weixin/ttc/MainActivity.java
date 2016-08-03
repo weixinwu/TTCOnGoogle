@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -38,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     final static int parse_code_parse_direction = 1;
     final static int parse_code_parse_stops = 2;
     final static int parse_code_parse_prediction = 3;
+    final static int parse_code_parse_routes = 5;
     int direction_code;//if the direction is north and south, direction_code is set 0; else direction code is set 1;
     ListView lv;
     String strUrl;
@@ -57,12 +57,8 @@ public class MainActivity extends AppCompatActivity {
 
         dialog = new ProgressDialog(this);
         dialog.setMessage("Loading...");
-
-
-        list_of_route = getResources().getStringArray(R.array.list_of_route);
-
+        new routesTask().execute();
         lv = (ListView) findViewById(R.id.Route_list_view_id);
-        lv.setAdapter(new ArrayAdapter<String>(this, R.layout.list_text_view, list_of_route));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
@@ -74,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 new MyTask().execute(strUrl);
             }
         });
-
         sharedPreferences = getSharedPreferences("savedInfo",MODE_PRIVATE);
         rate_my_app();
     }
@@ -165,6 +160,26 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
         return direction_chosen[0];
     }
+    public class routesTask extends AsyncTask<Void,Void,Void>{
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            String url = "http://webservices.nextbus.com/service/publicXMLFeed?command=routeList&a=ttc";
+            try {
+                list_of_route = parse(url,parse_code_parse_routes,null);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            lv.setAdapter(new ArrayAdapter<String>(getBaseContext(), R.layout.list_text_view, list_of_route));
+
+        }
+    }
     public class MyTask extends AsyncTask<String,Void,String[]> {
         @Override
         protected String[] doInBackground(String... params) {
@@ -245,11 +260,32 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (parse_code==4){
             temp = stop_ID;
-        }else{
+        }else if (parse_code == parse_code_parse_routes){
+            temp = getRoutes(inputStream);
+        }
+        else{
             temp=null;
         }
         return temp;
     }
+
+    private String[] getRoutes(InputStream inputStream) throws Exception {
+        String[] returnValue = null;
+        List<String> listElement = new ArrayList<String>();
+        if (inputStream==null)
+            return null;
+        else {
+            Element element = rootElement(inputStream);
+            NodeList routes = element.getElementsByTagName("route");
+            int length = routes.getLength();
+            for (int i = 0 ; i < length;i++){
+                listElement.add(((Element)routes.item(i)).getAttribute("title"));
+            }
+            returnValue = listElement.toArray(new String[listElement.size()]);
+        }
+        return returnValue;
+    }
+
     public String[] getPrediction(InputStream inputStream){
         String returnValue[];
         try {
