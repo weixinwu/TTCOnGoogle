@@ -404,10 +404,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         int id = item.getItemId();
-
-
         if (id == R.id.action_settings) {
             Toast.makeText(MainActivity.this, "Please contact by sending email to weixin.wu6@gmail.com", Toast.LENGTH_LONG).show();
             return true;
@@ -418,7 +415,6 @@ public class MainActivity extends AppCompatActivity {
         else if (id ==R.id.Save_routes){
             startActivity(new Intent(getBaseContext(),saveRoute.class));
         }
-
         return super.onOptionsItemSelected(item);
     }
     public void makeToast(String s){
