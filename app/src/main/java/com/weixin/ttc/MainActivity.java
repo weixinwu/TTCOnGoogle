@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        startActivity(new Intent(getBaseContext(),SplashScreen.class));
         dialog = new ProgressDialog(this);
         dialog.setMessage("Loading...");
         new routesTask().execute();
